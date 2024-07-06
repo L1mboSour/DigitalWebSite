@@ -1,0 +1,61 @@
+html {
+    box-sizing: border-box;
+}
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+a{
+    text-decoration: none;
+}
+body{
+    margin: 0;
+}
+.intro > div{
+    width: 47%;
+}
+
+.intro{
+    display: flex;
+    justify-content: space-between;
+    padding: 59px 0;
+    align-items: center;
+    /* justify-container - свойство устанавливающее правило расположения дочерних элементов х
+        space-beetwen - все элементы  распологаются равномерно по ширине, а крайние прилегают по краям
+        center - центрирует все элемнты
+        spaçe-around - все элементы распологаются равномерно по ширине, а крайние имеют расстояние от краев равно половине расстояния других элементов друг от друга
+        left, right, baseline, end, start*/
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+.container{
+    max-width: 1157px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.intro-text {
+    font-size: 20px;
+    color: #30444E;
+}
+
+.intro-title{
+    color: #1F2E35;
+    font-size: 48px;
+    font-weight: bold
+}
+
+.intro-title > span {
+    color: #EE4248;
+}
+
+.intro-btn{
+    display: inline-block;
+    color: #FFFFFF;
+    background-color: #EE4248;
+    padding: 12px 32px;
+    border-radius: 4px;
+}
