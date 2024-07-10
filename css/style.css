@@ -9,6 +9,7 @@ a{
     text-decoration: none;
 }
 body{
+    font-family:'Roboto';
     margin: 0;
 }
 .intro > div{
@@ -25,8 +26,9 @@ body{
         center - центрирует все элемнты
         spaçe-around - все элементы распологаются равномерно по ширине, а крайние имеют расстояние от краев равно половине расстояния других элементов друг от друга
         left, right, baseline, end, start*/
+    padding: 59px 0;
 }
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6,p{
     margin: 0;
 }
 
@@ -38,6 +40,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .intro-text {
+    margin: 24px 0;
     font-size: 20px;
     color: #30444E;
 }
@@ -48,7 +51,7 @@ h1,h2,h3,h4,h5,h6{
     font-weight: bold
 }
 
-.intro-title > span {
+.intro-title > span, .info-title > span, .info-text > span {
     color: #EE4248;
 }
 
@@ -58,4 +61,34 @@ h1,h2,h3,h4,h5,h6{
     background-color: #EE4248;
     padding: 12px 32px;
     border-radius: 4px;
+}
+
+.info {
+    background-color: #F6F6F6;
+    align-items: center;
+}
+.info-content{
+    width: 45%;
+}
+
+.info-title{
+    font-size: 32px;
+    color: #1F2E35;
+}
+
+.info-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info-content {
+}
+.info-article {
+    margin-top: 24px;
+    color: #30444E;
+    font-size: 18px;
+}
+.info-text:nth-child(2) {
+    margin-top: 18px;
 }
