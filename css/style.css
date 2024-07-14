@@ -45,13 +45,14 @@ h1,h2,h3,h4,h5,h6,p{
     color: #30444E;
 }
 
+
 .intro-title{
     color: #1F2E35;
     font-size: 48px;
     font-weight: bold
 }
 
-.intro-title > span, .info-title > span, .info-text > span, .info2-title > span {
+.intro-title > span, .info-title > span, .info-text > span {
     color: #EE4248;
 }
 
@@ -63,12 +64,19 @@ h1,h2,h3,h4,h5,h6,p{
     border-radius: 4px;
 }
 
+.info-content {
+    width: 45%;
+}
+
 .info {
     background-color: #F6F6F6;
     align-items: center;
 }
-.info-content{
-    width: 45%;
+
+.info2-content{
+    width: 24%;
+    padding-top: 200px;
+
 }
 
 .info-title{
@@ -82,6 +90,10 @@ h1,h2,h3,h4,h5,h6,p{
     align-items: center;
 }
 
+.info-img {
+    align-items: end;
+}
+
 .info-article {
     margin-top: 24px;
     color: #30444E;
@@ -90,20 +102,24 @@ h1,h2,h3,h4,h5,h6,p{
 .info-text:nth-child(2) {
     margin-top: 18px;
 }
-/* 
-.info2-title {
-    font-size: 28px;
-    color: #EE4248
-}
 
-.info2-article{
-    font-size: 18px;
-    color: #30444E;
+.info2-img {
+    margin-bottom: 15px;
 }
 
 .info2-text {
-    text-align: left;
-} */
+    line-height: 150%;
+    color: #30444E;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.info2-title {
+    font-size: 28px;
+    color: #EE4248;
+    margin-bottom: 15px;
+}
+
 .logo-left {
     display: flex;
 }
@@ -131,41 +147,50 @@ h1,h2,h3,h4,h5,h6,p{
     font-size: 18px;
 }
 
-
-
 .footer-info {
     display: flex;
     padding-top: 115px;
     padding-bottom: 13px;
-    align-items: center;
+    align-items: end;
+    gap: 47px;
+    line-height: 149%;
+}
+
+.footer-info-title {
+    font-size: 18px;
+    margin-bottom: 8px;
+    font-weight: 700;
 }
 
 .footer-contacts-title {
-    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
 }
 
 .logo {
     display: flex;
     align-items: center;
+    padding-bottom: 10px;
 }
 
 .logo-right {
     font-size: 10px;
+    line-height: 135%;
+    font-weight: 700;
 }
 
 .logo-right > span {
-    color: #000000;
-    display: inherit;
+    color: #85171A;
+    display: flex;
 }
 
 .logo-right > span:nth-child(2) {
-    color: #263238;
-    display: inherit;
+    color: #DC2025;
 }
 
-.logo-right > span:nth-last-child() {
-    color: #263238;
-    display: inherit;
+.logo-right > span:last-child {
+    color: #FEBA08;
 }
 
 .footer-rights {
@@ -175,6 +200,11 @@ h1,h2,h3,h4,h5,h6,p{
     background-color: #EE4248;
     text-align: center;
 }
+
+/* .footer-info-item {
+    gap: 47px;
+
+} */
 
 /* line-height - изменяет высоту строки */
 /* gap- создает разрыв между flex - элементами */
