@@ -74,9 +74,7 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 .info2-content{
-    width: 24%;
-    padding-top: 200px;
-
+    display: flex;
 }
 
 .info-title{
@@ -103,15 +101,25 @@ h1,h2,h3,h4,h5,h6,p{
     margin-top: 18px;
 }
 
+
 .info2-img {
     margin-bottom: 15px;
+    padding-top: 41px;
 }
 
 .info2-text {
-    line-height: 150%;
     color: #30444E;
     font-size: 18px;
     margin-bottom: 15px;
+    text-align: left;
+    width: 90%;
+}
+
+.info-types-title {
+    text-align: center;
+    padding-top: 116px;
+    font-size: 32px;
+    font-weight: 700;
 }
 
 .info2-title {
@@ -145,6 +153,7 @@ h1,h2,h3,h4,h5,h6,p{
 .footer-info-text {
     color: #263238;
     font-size: 18px;
+    line-height: 149%;
 }
 
 .footer-info {
@@ -199,6 +208,11 @@ h1,h2,h3,h4,h5,h6,p{
     color: #FFFFFF;
     background-color: #EE4248;
     text-align: center;
+}
+
+.info3-title {
+    padding: 0 45px;
+    align-items: left;
 }
 
 /* .footer-info-item {
