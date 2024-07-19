@@ -235,8 +235,8 @@ h1,h2,h3,h4,h5,h6,p{
 
 .header-content-item {
     padding: 10px 15px;
+    border-radius: 3px;
     transition-duration: 200ms;
-    border-radius: 8px;
 }
 
 .header-content-item:hover{
@@ -244,18 +244,27 @@ h1,h2,h3,h4,h5,h6,p{
     color: #FFF;
 }
 
-.dropdown {
+.header-content-item:hover  svg{
+    fill: #FFF;
+    fill-opacity: 1;
+}
+
+.dropdown-inner {
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
-.dropdown > svg, .header-icons > svg{
+.dropdown-inner > svg, .header-icons > svg{
     fill: #1F2E35;
     fill-opacity: 0.8;
 }
 
-.dropdown:hover > svg{
+.header-content-item.dropdown {
+    border-radius: 3px 3px 0 0;
+}
+
+.dropdown:hover  svg{
     fill: #FFF;
     fill-opacity: 1;
 }
@@ -266,17 +275,56 @@ h1,h2,h3,h4,h5,h6,p{
     align-items: center;
 }
 
-.header-icons:hover > svg:first-child {
+.header-icons > svg:first-child:hover, .header-icons > svg:nth-child(2):hover, .header-icons > svg:last-child:hover {
     fill:#EE4248
 }
 
+.dropdown {
+    position: relative;
+}
 
+.dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    transition-duration: 200ms;
+}
+
+.dropdown-item{
+    width: 130%;
+    font-size: 18px;
+    color: #FFF;
+    padding: 10px 15px;
+    background-color: #DC2025;
+    transition-duration: 200ms;
+}
+
+.dropdown:hover .dropdown-content{
+    opacity: 1;
+}
+
+.dropdown-item:first-child {
+    border-radius: 0 3px 0 0;
+}
+
+
+.dropdown-item:last-child {
+    border-radius: 0 0 3px 3px;
+}
 
 /* line-height - изменяет высоту строки */
-/* gap- создает разрыв между flex - элементами */
+/* gap - создает разрыв между flex - элементами */
 /* text align - изменяет положение текста */
 /* display: none - удаляет элемент со страницы */
 /* transition-duration - устанавливает плавность перехода */
 /* :hover - это псевкласс добавлющий эффект при наводе на элемента */
 /* fill - цвет заливки */
 /* fill-opacity - прозрачность заливки */
+/* z-index - устанавливает порядок наложений элементов друг на друга со свойством position*/
+/* position - устанавливает позиционирование для элементов.
+        Имеет следующие значения:
+            relative - элемент позционируется так же, как и статичный, но его отобраение может быть смещено относительно своего начального положения
+            absolute - Убирает элемент из потока делая его поверх остальных.
+    top, left, right, bottom - указывает положение от этих краев. Также их можно комбинировать.*/
