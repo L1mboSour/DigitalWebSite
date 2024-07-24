@@ -1,6 +1,7 @@
 html {
     box-sizing: border-box;
 }
+*,
 *::before,
 *::after {
     box-sizing: inherit;
@@ -8,11 +9,16 @@ html {
 a{
     text-decoration: none;
 }
+
 body{
-    font-family:'Roboto';
+    font-family:"Roboto";
     margin: 0;
 }
-.intro > div{
+.intro-inner {
+    display: flex;
+}
+
+.intro-content{
     width: 47%;
 }
 
@@ -21,7 +27,6 @@ body{
     justify-content: space-between;
     padding: 59px 0;
     align-items: center;
-    padding: 59px 0;
 }
 
 h1,h2,h3,h4,h5,h6,p{
@@ -29,10 +34,11 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 .container{
-    max-width: 1157px;
+    max-width: 1189px;
     width: 100%;
     margin: 0 auto;
     position: relative;
+    padding: 0 16px;
 }
 
 .intro-text {
@@ -102,11 +108,13 @@ h1,h2,h3,h4,h5,h6,p{
 }
 .info-type-content {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
-    gap: 66px;
+    gap: 46px;
     padding-top: 41px;
     align-items: center;
 }
+
 .info-type-title {
     padding-top: 15px;
     color: #EE4248;
@@ -119,6 +127,10 @@ h1,h2,h3,h4,h5,h6,p{
     color: #30444E;
     line-height: 1.5;
     text-align: left;
+}
+
+.info-types-item {
+    width: 28%;
 }
 
 .info-types-item:first-child{
@@ -171,6 +183,7 @@ h1,h2,h3,h4,h5,h6,p{
 
 .footer-info {
     display: flex;
+    width: 100%;
     padding-top: 115px;
     padding-bottom: 13px;
     align-items: end;

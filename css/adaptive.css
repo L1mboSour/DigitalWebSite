@@ -1,0 +1,60 @@
+@media (max-width: 860px) {
+    .header-inner > .header-content, .header-inner > .header-icons{
+        display: none;
+    }
+
+    .intro {
+        padding: 32px 0;
+    }
+
+    .intro-title {
+        font-size: 24px;
+    }
+
+    .intro-text{
+        font-size: 18px;
+        margin: 16px 0;
+    }
+
+    .intro-btn{
+        padding: 8px 24px;
+        font-size: 18px;
+    }
+
+    .intro-inner > img {
+        width: 50%;
+    }
+
+    .info-img {
+        width: 45%;
+    }
+
+    .info-title {
+        font-size: 24px;
+    }
+
+    .info-article {
+        font-size: 14px;
+    }
+
+    .info-type-title {
+        font-size: 19px;
+    }
+
+    .info-type-text {
+        font-size: 14px
+    }
+
+    .info-type-title {
+        font-size: 18px;
+    }
+
+
+
+
+}
+
+@media (max-width: 640px) {
+    
+    
+}
