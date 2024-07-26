@@ -8,16 +8,17 @@
     }
 
     .intro-title {
-        font-size: 24px;
+        font-size: 26px;
     }
 
     .intro-text{
-        font-size: 18px;
+        font-size: 16px;
         margin: 16px 0;
     }
 
     .intro-btn{
-        padding: 8px 24px;
+        margin-top: 20px;
+        padding: 20px 26px;
         font-size: 18px;
     }
 
@@ -38,23 +39,129 @@
     }
 
     .info-type-title {
-        font-size: 19px;
+        font-size: 35px;
+        margin-top: 32px;
     }
 
     .info-type-text {
-        font-size: 14px
+        font-size: 26px;
+        text-align: center;
+
     }
 
-    .info-type-title {
-        font-size: 18px;
+    .info-types-title {
+        font-size: 38px;
     }
 
+    .footer-contacts-title {
+        font-size: 22px;
+    }
 
+    .footer-info-title {
+        font-size: 16px;
+    }
+    
+    .footer-info-text {
+        font-size: 16px
+    }
 
+    .logo-left > span{
+        font-size: 44px;
+    }
 
+    .logo-left > span:nth-child(2){
+        font-size: 44px;
+    }
+
+    .logo-left > span:last-child{
+        font-size: 44px;
+    }
+
+    .info-types-item > img {
+        width: 130px;
+    }
+
+    .info-type-content {
+        justify-content: space-around;
+    }
+
+    .info-types-item {
+        align-items: center;
+        display: flex;
+        width: 80%;
+    }
+
+    
 }
 
 @media (max-width: 640px) {
     
+
+    .intro-inner {
+        align-items: center;
+    }
     
+    .info-content {
+        width: 45%;
+    }
+
+    .info-article {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .info-title {
+        font-size: 20px;
+    }
+
+    .intro-title {
+        font-size: 22px;
+    }
+
+    .intro-btn {
+        margin-top: 15px;
+        padding: 15px 25px;
+    }
+
+    .intro-content > .intro-btn {
+        margin-top: 15px;
+        padding: 15px 15px;
+        font-size: 18px;
+    }
+
+    .info-types-title {
+        font-size: 32px;
+    }
+
+    .info-types-item > img {
+        width: 110px;
+    }
+
+    .info-type-content {
+        margin-top: 15px;
+    }
+
+    .info-types-item {
+        align-items: center;
+        display: flex;
+        width: 80%;
+        height: 350px;
+        margin-top: 25px;
+        
+    }
+
+    .info-type-title {
+        font-size: 30px;
+        margin-top: 32px;
+    }
+
+    .info-type-text {
+        font-size: 26px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .info-text:nth-child(2) {
+        margin-top: 15px;
+    }
 }
